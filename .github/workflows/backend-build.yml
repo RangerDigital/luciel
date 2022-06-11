@@ -8,6 +8,10 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
+defaults:
+  run:
+    working-directory: luciel
+
 jobs:
   build:
     runs-on: ubuntu-latest
